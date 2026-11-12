@@ -19,7 +19,23 @@ namespace _4lab
 
         private void button3_Click(object sender, EventArgs e)
         {
+            DateTime birthday = dateTimePicker1.Value.Date;
+            DateTime today = DateTime.Today;
 
+            if (birthday > today)
+            {
+                labelAge.Text = "Дата рождения не может быть в будущем";
+                return;
+            }
+
+            int age = today.Year - birthday.Year;
+
+            if (birthday > today.AddYears(-age))
+            {
+                age--;
+            }
+
+            labelAge.Text = $"Возраст: {age}";
         }
     }
 }
