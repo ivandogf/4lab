@@ -30,7 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.labelAge = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.labelAge = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -45,22 +46,33 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(278, 136);
+            this.dateTimePicker1.Location = new System.Drawing.Point(298, 202);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(207, 20);
             this.dateTimePicker1.TabIndex = 1;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Olive;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(298, 245);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(207, 74);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Рассчитать возраст";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // labelAge
             // 
-            this.labelAge.BackColor = System.Drawing.Color.Olive;
-            this.labelAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelAge.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.labelAge.Location = new System.Drawing.Point(278, 191);
+            this.labelAge.AutoSize = true;
+            this.labelAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAge.Location = new System.Drawing.Point(296, 145);
             this.labelAge.Name = "labelAge";
-            this.labelAge.Size = new System.Drawing.Size(207, 75);
-            this.labelAge.TabIndex = 2;
-            this.labelAge.Text = "Рассчитать возраст";
-            this.labelAge.UseVisualStyleBackColor = false;
+            this.labelAge.Size = new System.Drawing.Size(209, 25);
+            this.labelAge.TabIndex = 4;
+            this.labelAge.Text = "Узнай свой возраст";
             // 
             // Form2
             // 
@@ -69,6 +81,7 @@
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.labelAge);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label1);
             this.Name = "Form2";
@@ -82,6 +95,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button labelAge;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label labelAge;
     }
 }
